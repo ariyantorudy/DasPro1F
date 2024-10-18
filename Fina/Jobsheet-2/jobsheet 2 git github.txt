@@ -1,0 +1,268 @@
+
+LENOVO@2357LENOVO MINGW64 ~
+$ git --version
+git version 2.46.0.windows.1
+
+LENOVO@2357LENOVO MINGW64 ~
+$ git config --global user.name"FinaIsma"
+
+LENOVO@2357LENOVO MINGW64 ~
+$
+
+LENOVO@2357LENOVO MINGW64 ~
+$ git config --global user.email"finnaissma@gmail.com"
+
+LENOVO@2357LENOVO MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Fina12RPLC
+user.email=finnaissma@gmail.com
+
+LENOVO@2357LENOVO MINGW64 ~
+$ pwd
+/c/Users/LENOVO
+
+LENOVO@2357LENOVO MINGW64 ~
+$ cd ..
+
+LENOVO@2357LENOVO MINGW64 /c/Users
+$ cd ..
+
+LENOVO@2357LENOVO MINGW64 /c
+$ cd c/Users/LENOVO/OneDrive/Documents/Kuliah/DASPRO/fun-space
+bash: cd: c/Users/LENOVO/OneDrive/Documents/Kuliah/DASPRO/fun-space: No such file or directory
+
+LENOVO@2357LENOVO MINGW64 /c
+$ cd c:\Users\LENOVO\OneDrive\Documents\Kuliah\DASPRO\fun-space
+bash: cd: c:UsersLENOVOOneDriveDocumentsKuliahDASPROfun-space: No such file or directory
+
+LENOVO@2357LENOVO MINGW64 /c
+$ cd Users
+
+LENOVO@2357LENOVO MINGW64 /c/Users
+$ cd LENOVO
+
+LENOVO@2357LENOVO MINGW64 ~
+$ cd OneDrive
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive
+$ c ..
+bash: c: command not found
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive
+$ cd ..
+
+LENOVO@2357LENOVO MINGW64 ~
+$ cd c
+bash: cd: c: No such file or directory
+
+LENOVO@2357LENOVO MINGW64 ~
+$ pwd
+/c/Users/LENOVO
+
+LENOVO@2357LENOVO MINGW64 ~
+$ cd Documents
+
+LENOVO@2357LENOVO MINGW64 ~/Documents
+$ pwd
+/c/Users/LENOVO/Documents
+
+LENOVO@2357LENOVO MINGW64 ~/Documents
+$ cd Kuliah
+bash: cd: Kuliah: No such file or directory
+
+LENOVO@2357LENOVO MINGW64 ~/Documents
+$ cd ..
+
+LENOVO@2357LENOVO MINGW64 ~
+$ pwd
+/c/Users/LENOVO
+
+LENOVO@2357LENOVO MINGW64 ~
+$ cd OneDrive
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive
+$ cd Documents
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents
+$ cd Kuliah
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah
+$ cd DASPRO
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO
+$ cd fun-space
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO/fun-space
+$ ls
+luas_segitiga.java
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO/fun-space
+$ git init
+Initialized empty Git repository in C:/Users/LENOVO/OneDrive/Documents/Kuliah/DASPRO/fun-space/.git/
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO/fun-space (master)
+$ git remote add origin https://github.com/FinaIsma/fun-space.git
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO/fun-space (master)
+$ git branch -M main
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO/fun-space (main)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/FinaIsma/fun-space.git'
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO/fun-space (main)
+$ git push --u origin main
+error: unknown option `u'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]repo <repository>
+                          repository
+    --[no-]all            push all branches
+    --[no-]branches       alias of --all
+    --[no-]mirror         mirror all refs
+    -d, --[no-]delete     delete refs
+    --[no-]tags           push tags (can't be used with --all or --branches or --mirror)
+    -n, --[no-]dry-run    dry run
+    --[no-]porcelain      machine-readable output
+    -f, --[no-]force      force updates
+    --[no-]force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --[no-]force-if-includes
+                          require remote updates to be integrated locally
+    --[no-]recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --[no-]thin           use thin pack
+    --[no-]receive-pack <receive-pack>
+                          receive pack program
+    --[no-]exec <receive-pack>
+                          receive pack program
+    -u, --[no-]set-upstream
+                          set upstream for git pull/status
+    --[no-]progress       force progress reporting
+    --[no-]prune          prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --verify              opposite of --no-verify
+    --[no-]follow-tags    push missing but relevant tags
+    --[no-]signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --[no-]atomic         request atomic transaction on remote side
+    -o, --[no-]push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO/fun-space (main)
+$ git add .
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO/fun-space (main)
+$ git commit  -m "First GitHub Project"
+[main (root-commit) 0a7a0bd] First GitHub Project
+ 1 file changed, 14 insertions(+)
+ create mode 100644 luas_segitiga.java
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO/fun-space (main)
+$ git push -u origin main
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/FinaIsma/fun-space.git/'
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO/fun-space (main)
+$ git config --list
+
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Fina12RPLC
+user.email=finnaissma@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/FinaIsma/fun-space.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO/fun-space (main)
+$ git config --global user.name"FinaIsma"
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO/fun-space (main)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Fina12RPLC
+user.email=finnaissma@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/FinaIsma/fun-space.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO/fun-space (main)
+$ git config --global user.name"Fina12RPLC"
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO/fun-space (main)
+$ git push -u origin main
+
+git push -u origin main
+;
+end
+
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO/fun-space (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 423 bytes | 141.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/FinaIsma/fun-space.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+LENOVO@2357LENOVO MINGW64 ~/OneDrive/Documents/Kuliah/DASPRO/fun-space (main)
+$
