@@ -1,0 +1,116 @@
+ACER 3@LILIYAN MINGW64 ~
+$ git config --global user.name "LiliyanPramudita16"
+
+ACER 3@LILIYAN MINGW64 ~
+$ git config --global user.email "liliyanpramudita1@gmail.com"
+
+ACER 3@LILIYAN MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.email=liliyanpramudita1@gmail.com
+user.name=LiliyanPramudita16
+
+ACER 3@LILIYAN MINGW64 ~
+$ cd Desktop/
+
+ACER 3@LILIYAN MINGW64 ~/Desktop
+$ 1s
+bash: 1s: command not found
+
+ACER 3@LILIYAN MINGW64 ~/Desktop
+$ ls
+'Excel 2013.lnk'*  'GitHub Desktop.lnk'*  'PowerPoint 2013.lnk'*  'Visual Studio Code.lnk'*  'Word 2013.lnk'*   desktop.ini
+
+ACER 3@LILIYAN MINGW64 ~/Desktop
+$ cd FUN-SPACE/
+bash: cd: FUN-SPACE/: No such file or directory
+
+ACER 3@LILIYAN MINGW64 ~/Desktop
+$ CD DASPRO/FUN-SPACE/
+bash: CD: command not found
+
+ACER 3@LILIYAN MINGW64 ~/Desktop
+$ C/DASPRO/FUN-SPACE
+bash: C/DASPRO/FUN-SPACE: No such file or directory
+
+ACER 3@LILIYAN MINGW64 ~/Desktop
+$ C;\DASPRO
+bash: C: command not found
+bash: DASPRO: command not found
+
+ACER 3@LILIYAN MINGW64 ~/Desktop
+$ C:\DASPRO
+bash: C:DASPRO: command not found
+
+ACER 3@LILIYAN MINGW64 ~/Desktop
+$ ls
+ DASPRO/  'Excel 2013.lnk'*  'GitHub Desktop.lnk'*  'PowerPoint 2013.lnk'*  'Visual Studio Code.lnk'*  'Word 2013.lnk'*   desktop.ini
+
+ACER 3@LILIYAN MINGW64 ~/Desktop
+$ cd DASPRO/FUN-SPACE/
+
+ACER 3@LILIYAN MINGW64 ~/Desktop/DASPRO/FUN-SPACE
+$ pwd
+/c/Users/ACER 3/Desktop/DASPRO/FUN-SPACE
+
+ACER 3@LILIYAN MINGW64 ~/Desktop/DASPRO/FUN-SPACE
+$ git init
+Initialized empty Git repository in C:/Users/ACER 3/Desktop/DASPRO/FUN-SPACE/.git/
+
+ACER 3@LILIYAN MINGW64 ~/Desktop/DASPRO/FUN-SPACE (master)
+$ git remote add origin https://github.com/LiliyanPramudita16/FUN-SPACE.git
+
+ACER 3@LILIYAN MINGW64 ~/Desktop/DASPRO/FUN-SPACE (master)
+$ git branch -M main
+
+ACER 3@LILIYAN MINGW64 ~/Desktop/DASPRO/FUN-SPACE (main)
+$ git add .
+
+ACER 3@LILIYAN MINGW64 ~/Desktop/DASPRO/FUN-SPACE (main)
+$ git comit -m "first github project"
+git: 'comit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+ACER 3@LILIYAN MINGW64 ~/Desktop/DASPRO/FUN-SPACE (main)
+$ git commit -m "first github project"
+[main (root-commit) ddb7fe1] first github project
+ 1 file changed, 16 insertions(+)
+ create mode 100644 Luas_Segitiga.java
+
+ACER 3@LILIYAN MINGW64 ~/Desktop/DASPRO/FUN-SPACE (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 426 bytes | 426.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/LiliyanPramudita16/FUN-SPACE.git
+ * [new branch]      main -> main
+
+ACER 3@LILIYAN MINGW64 ~/Desktop/DASPRO/FUN-SPACE (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+ACER 3@LILIYAN MINGW64 ~/Desktop/DASPRO/FUN-SPACE (main)
+$
