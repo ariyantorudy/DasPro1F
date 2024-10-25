@@ -12,9 +12,10 @@ public class Triangle12 {
         while(i<=N) {
             int j =0;
             while (j<i) {
-                System.out.println("*");
+                System.out.print("*");
                 j++;
             }
+            System.out.println();
             i++;
         }
     }
