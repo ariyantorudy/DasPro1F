@@ -1,0 +1,141 @@
+user@LAPTOP-L3NKMKIE MINGW64 ~
+$ git --version
+git version 2.46.0.windows.1
+
+user@LAPTOP-L3NKMKIE MINGW64 ~
+$ git config --global user.name "esasyanii"
+
+user@LAPTOP-L3NKMKIE MINGW64 ~
+$ git config --global user.email "syaniday@gmail.com"
+
+user@LAPTOP-L3NKMKIE MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=syaniday@gmail.com
+user.name=esasyanii
+
+user@LAPTOP-L3NKMKIE MINGW64 ~
+$ pwd
+/c/Users/user
+
+user@LAPTOP-L3NKMKIE MINGW64 ~
+$ cd /c/daspro
+
+user@LAPTOP-L3NKMKIE MINGW64 /c/daspro
+$ pwd
+/c/daspro
+
+user@LAPTOP-L3NKMKIE MINGW64 /c/daspro
+$ cd fun-space
+
+user@LAPTOP-L3NKMKIE MINGW64 /c/daspro/fun-space (main)
+$ ls
+luas_segitiga.java
+
+user@LAPTOP-L3NKMKIE MINGW64 /c/daspro/fun-space (main)
+$ git init
+Reinitialized existing Git repository in C:/daspro/fun-space/.git/
+
+user@LAPTOP-L3NKMKIE MINGW64 /c/daspro/fun-space (main)
+$ git remote add origin https://github.com/esasyanii/fun-space.git
+error: remote origin already exists.
+
+user@LAPTOP-L3NKMKIE MINGW64 /c/daspro/fun-space (main)
+$ git remote remove origin
+
+user@LAPTOP-L3NKMKIE MINGW64 /c/daspro/fun-space (main)
+$ git remote add origin https://github.com/esasyanii/fun-space.git
+
+user@LAPTOP-L3NKMKIE MINGW64 /c/daspro/fun-space (main)
+$ git branch -M main
+
+user@LAPTOP-L3NKMKIE MINGW64 /c/daspro/fun-space (main)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/esasyanii/fun-space.git'
+
+user@LAPTOP-L3NKMKIE MINGW64 /c/daspro/fun-space (main)
+$ git push --u origin main
+error: unknown option `u'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]repo <repository>
+                          repository
+    --[no-]all            push all branches
+    --[no-]branches       alias of --all
+    --[no-]mirror         mirror all refs
+    -d, --[no-]delete     delete refs
+    --[no-]tags           push tags (can't be used with --all or --branches or --mirror)
+    -n, --[no-]dry-run    dry run
+    --[no-]porcelain      machine-readable output
+    -f, --[no-]force      force updates
+    --[no-]force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --[no-]force-if-includes
+                          require remote updates to be integrated locally
+    --[no-]recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --[no-]thin           use thin pack
+    --[no-]receive-pack <receive-pack>
+                          receive pack program
+    --[no-]exec <receive-pack>
+                          receive pack program
+    -u, --[no-]set-upstream
+                          set upstream for git pull/status
+    --[no-]progress       force progress reporting
+    --[no-]prune          prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --verify              opposite of --no-verify
+    --[no-]follow-tags    push missing but relevant tags
+    --[no-]signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --[no-]atomic         request atomic transaction on remote side
+    -o, --[no-]push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+user@LAPTOP-L3NKMKIE MINGW64 /c/daspro/fun-space (main)
+$ git add .
+
+user@LAPTOP-L3NKMKIE MINGW64 /c/daspro/fun-space (main)
+$ git commit -m "fun-space"
+[main (root-commit) d6c344e] fun-space
+ 1 file changed, 15 insertions(+)
+ create mode 100644 luas_segitiga.java
+
+user@LAPTOP-L3NKMKIE MINGW64 /c/daspro/fun-space (main)
+$ git push -u origin main
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/esasyanii/fun-space.git/'
+
+user@LAPTOP-L3NKMKIE MINGW64 /c/daspro/fun-space (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 406 bytes | 406.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/esasyanii/fun-space.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+user@LAPTOP-L3NKMKIE MINGW64 /c/daspro/fun-space (main)
+$
