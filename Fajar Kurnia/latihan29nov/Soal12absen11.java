@@ -19,28 +19,22 @@ public class Soal12absen11 {
 
             for (int i = 1; i <= jmlPegawai; i++) {
                 System.out.println("Pegawai ke-" + i);
-                System.out.print("Masukkan gaji/jam : ");
+                System.out.print("Masukkan gaji mingguan : ");
                 tarifGaji = sc.nextInt();
+                System.out.print("Masukkan jam kerja mingguan : ");
+                jamKerja = sc.nextInt();
 
-                int totalJamKerja = 0; 
-
-                for (int j = 0; j < 7; j++) {
-                    System.out.print("Masukkan jam kerja ke-" + (j + 1) + " : ");
-                    jamKerja = sc.nextInt();
-                    totalJamKerja += jamKerja;
-                }
-
-                if (totalJamKerja > 40) {
-                    gajiKotor = (tarifGaji * totalJamKerja) * 2;
+                if (jamKerja > 40) {
+                    gajiKotor = (tarifGaji * jamKerja) * 2;
                 } else {
-                    gajiKotor = tarifGaji * totalJamKerja;
+                    gajiKotor = tarifGaji * jamKerja;
                 }
 
                 gajiBersih = gajiKotor - (gajiKotor * 0.3);
                 System.out.println();
                 System.out.println("=================================");
                 System.out.println("Tarif Gaji : " + tarifGaji + "/jam");
-                System.out.println("Jam Kerja Mingguan: " + totalJamKerja + " jam");
+                System.out.println("Jam Kerja Mingguan: " + jamKerja + " jam");
                 System.out.println("Gaji Kotor : " + gajiKotor);
                 System.out.println("Potongan : " + (gajiKotor * 0.3));
                 System.out.println("Gaji Bersih : " + gajiBersih);
