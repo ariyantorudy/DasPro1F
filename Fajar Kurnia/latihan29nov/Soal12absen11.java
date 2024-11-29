@@ -34,11 +34,13 @@ public class Soal12absen11 {
                 System.out.println();
                 System.out.println("=================================");
                 System.out.println("Tarif Gaji : " + tarifGaji + "/jam");
-                System.out.println("Jam Kerja Mingguan: " + jamKerja + " jam\n");
+                System.out.println("Jam Kerja Mingguan: " + jamKerja + " jam");
+                System.out.println("==================================\n");
                 System.out.println("========= GAJI MINGGUAN ==========");
                 System.out.println("Gaji Kotor : " + gajiKotor);
                 System.out.println("Potongan : " + (gajiKotor * 0.3));
                 System.out.println("Gaji Bersih : " + gajiBersih);
+                System.out.println("==================================\n");
                 System.out.println("========== GAJI BULANAN ==========");
                 System.out.println("Gaji Bulanan : " + (gajiBersih*4));
 
