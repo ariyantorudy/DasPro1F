@@ -100,7 +100,6 @@ public class UAS1F17 {
                     if (jumlahtim17 == 0) {
                     System.out.println("Belum ada data tim. Silakan input data skor tim terlebih dahulu.");
                     } else {
-                    // Determine the champion
                     System.out.println("\n===== JUARA =====");
                     System.out.printf("%-20s %-10s %-10s %-10s %-10s\n", "Nama Tim", "Level 1", "Level 2", "Total Skor", "Status");
                     int nilaiMax = 0;
