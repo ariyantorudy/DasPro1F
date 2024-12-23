@@ -1,4 +1,6 @@
-// Fina Ismatus Saniyah - 244107060004 / 12
+// Nama: Fina Ismatus Saniyah
+// NIM: 244107060004
+// Absen: 12
 
 import java.util.Scanner;
 
@@ -42,8 +44,8 @@ public class UAS1F12 {
                             sc12.nextLine();
                             continue;
                         } else if (skorLvPertama12[i] < 35) {
-                            skorLvKedua12[i] = 0;
-                            System.out.println("Skor level 2 dianggap 0 karena skor level 1 kurang dari 35.");
+                            skorLvPertama12[i] = 0;
+                            System.out.println("Skor level 1 dianggap 0 karena skor level 1 kurang dari 35.");
                         }
 
                         System.out.print("Masukkan skor level 2: ");
@@ -62,36 +64,59 @@ public class UAS1F12 {
                     break;
 
                 case 2:
+                System.out.println("Perhitungan Skor");
                     for (int i = 0; i < jumlahTim12; i++) {
                         if (totalSkor12[i] % 2 == 0) {
                             totalSkor12[i] -= 15;
+                            System.out.println("Total skor " + namaTim12[i] + " dikurangi 15 karena bernilai genap");
                         } else if (skorLvPertama12[i] > 50 && skorLvKedua12[i] > 50) {
                             totalSkor12[i] += 12;
+                            System.out.println("Total skor " + namaTim12[i] + " ditambah 12 karena dua skor lebih dari 50.");
                         }
                     }
 
                     System.out.println("\nDaftar Skor Akhir Turnamen Poin Luar Biasa (TPLB)");
-                    System.out.println("Nama Tim  | Skor Lv1 | Skor Lv2 | Total Skor");
-                    System.out.println("--------------------------------------------");
+                    System.out.printf("%-15s | %-10s | %-10s | %-10s%n", "Nama Tim", "Skor Lv1", "Skor Lv2", "Total Skor");
+                    System.out.println("--------------------------------------------------------------");
+                    
                     for (int i = 0; i < jumlahTim12; i++) {
-                        System.out.println("  " + namaTim12[i] + "    |   " + skorLvPertama12[i] + "   |   " + skorLvKedua12[i] + "   |   " + totalSkor12[i]);
+                        System.out.printf("%-15s | %-10.2f | %-10.2f | %-10.2f%n", 
+                        namaTim12[i], skorLvPertama12[i], skorLvKedua12[i], totalSkor12[i]);
                     }
+
+                    System.out.println("\nKeterangan");
+                    System.out.println("- Skor pertama kurang dari 35 dianggap 0");
+                    System.out.println("- Total skor bernilai genap dikurangi 15");
+                    System.out.println("- Kedua skor bernilai lebih dari 50 mendapat bonus 12");
                     break;
 
-                case 3:
+                    case 3:
+                    int jumlahPemenang = 0;
                     for (int i = 0; i < jumlahTim12; i++) {
-                        if (totalSkor12[i] > skorTertinggi12 ||
-                                (totalSkor12[i] == skorTertinggi12 && skorLvKedua12[i] > skorLvKeduaTertinggi12)) {
-                            pemenang12 = namaTim12[i];
+                        if (totalSkor12[i] > skorTertinggi12) {
                             skorTertinggi12 = totalSkor12[i];
                             skorLvKeduaTertinggi12 = skorLvKedua12[i];
-                        } else {
-                            pemenang12 = "Fina Ismatus Saniyah";                        }
+                            pemenang12 = namaTim12[i];
+                            jumlahPemenang = 1;
+                        } else if (totalSkor12[i] == skorTertinggi12) {
+                            if (skorLvKedua12[i] > skorLvKeduaTertinggi12) {
+                                skorLvKeduaTertinggi12 = skorLvKedua12[i];
+                                pemenang12 = namaTim12[i];
+                                jumlahPemenang = 1;
+                            } else if (skorLvKedua12[i] == skorLvKeduaTertinggi12) {
+                                jumlahPemenang++;
+                            }
+                        }
                     }
-
-                    System.out.println("\nSelamat kepada " + pemenang12 + " telah memenangkan Turnamen Poin Luar Biasa (TPLB)!!!");
+                
+                    if (jumlahPemenang > 1) {
+                        pemenang12 = "Fina Ismatus Saniyah";
+                        System.out.println("\nTurnamen berakhir seri. Pemenangnya adalah: " + pemenang12);
+                    } else {
+                        System.out.println("\nSelamat kepada " + pemenang12 + " telah memenangkan Turnamen Poin Luar Biasa (TPLB)!!!");
+                    }
                     break;
-
+                
                 case 4:
                     System.out.println("Terima kasih!");
                     break;
