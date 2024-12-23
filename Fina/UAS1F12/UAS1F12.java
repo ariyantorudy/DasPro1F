@@ -11,11 +11,11 @@ public class UAS1F12 {
         double[] skorLvPertama12 = new double[jumlahTim12];
         double[] skorLvKedua12 = new double[jumlahTim12];
         double[] totalSkor12 = new double[jumlahTim12];
-        String pemenang = "";
-        double skorTertinggi = -1;
-        double skorLvKeduaTertinggi = -1;
+        String pemenang12 = "";
+        double skorTertinggi12 = -1;
+        double skorLvKeduaTertinggi12 = -1;
 
-        int menu;
+        int menu12;
 
         do {
             System.out.println("\n=== DAFTAR MENU ===");
@@ -24,10 +24,10 @@ public class UAS1F12 {
             System.out.println("3. Tentukan Juara");
             System.out.println("4. Keluar");
             System.out.print("Pilih menu (1-4): ");
-            menu = sc12.nextInt();
+            menu12 = sc12.nextInt();
             sc12.nextLine();
 
-            switch (menu) {
+            switch (menu12) {
                 case 1:
                     for (int i = 0; i < jumlahTim12; i++) {
                         System.out.print("\nMasukkan nama tim: ");
@@ -80,15 +80,16 @@ public class UAS1F12 {
 
                 case 3:
                     for (int i = 0; i < jumlahTim12; i++) {
-                        if (totalSkor12[i] > skorTertinggi ||
-                                (totalSkor12[i] == skorTertinggi && skorLvKedua12[i] > skorLvKeduaTertinggi)) {
-                            pemenang = namaTim12[i];
-                            skorTertinggi = totalSkor12[i];
-                            skorLvKeduaTertinggi = skorLvKedua12[i];
-                        }
+                        if (totalSkor12[i] > skorTertinggi12 ||
+                                (totalSkor12[i] == skorTertinggi12 && skorLvKedua12[i] > skorLvKeduaTertinggi12)) {
+                            pemenang12 = namaTim12[i];
+                            skorTertinggi12 = totalSkor12[i];
+                            skorLvKeduaTertinggi12 = skorLvKedua12[i];
+                        } else {
+                            pemenang12 = "Fina Ismatus Saniyah";                        }
                     }
 
-                    System.out.println("\nSelamat kepada " + pemenang + " telah memenangkan Turnamen Poin Luar Biasa (TPLB)!!!");
+                    System.out.println("\nSelamat kepada " + pemenang12 + " telah memenangkan Turnamen Poin Luar Biasa (TPLB)!!!");
                     break;
 
                 case 4:
@@ -98,6 +99,6 @@ public class UAS1F12 {
                 default:
                     System.out.println("Menu invalid. Silakan pilih menu yang benar.");
             }
-        } while (menu != 4);
+        } while (menu12 != 4);
     }
 }
